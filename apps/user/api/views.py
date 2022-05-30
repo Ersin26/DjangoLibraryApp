@@ -1,7 +1,6 @@
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 from apps.user.models import User
-from django.forms.models import model_to_dict
 from django.views.decorators.csrf import csrf_exempt
 
 
