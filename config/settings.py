@@ -70,11 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-# db.createUser({user:"test", pwd:"test", roles:['dbOwner']})
 
 mongoengine.connect(db="library", host="localhost", username="libraryUser", password="U5NNQCMytEfMnaYR")
 

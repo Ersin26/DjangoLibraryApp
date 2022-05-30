@@ -1,3 +1,9 @@
-from django.db import models
+from mongoengine import Document, fields
 
-# Create your models here.
+
+class User(Document):
+    username = fields.StringField()
+    password = fields.StringField()
+
+    first_name = fields.StringField()
+    last_name = fields.StringField()
